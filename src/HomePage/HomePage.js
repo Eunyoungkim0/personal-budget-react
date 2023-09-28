@@ -1,7 +1,9 @@
 import React from 'react';
+import PieChart from '../Budget/PieChart';
 
 function HomePage() {
-  return (
+
+    return (
     <main className="center" id="main">
 
         <div className="page-area">
@@ -14,14 +16,14 @@ function HomePage() {
                     app will help you with that!
                 </p>
             </article>
-    
+
             <article>
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
-    
+
             <article>
                 <h1>Results</h1>
                 <p>
@@ -30,14 +32,14 @@ function HomePage() {
                     because they know it is all good and accounted for.
                 </p>
             </article>
-    
+
             <article>
                 <h1>Free</h1>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
             </article>
-    
+
             <article>
                 <h1>Stay on track</h1>
                 <p>
@@ -46,14 +48,14 @@ function HomePage() {
                     app will help you with that!
                 </p>
             </article>
-    
+
             <article>
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
-    
+
             <article>
                 <h1>Results</h1>
                 <p>
@@ -62,7 +64,7 @@ function HomePage() {
                     because they know it is all good and accounted for.
                 </p>
             </article>
-    
+
             <article>
                 <h1>Chart</h1>
                 <p>
@@ -72,11 +74,10 @@ function HomePage() {
 
         </div>
 
-        <div id = "d3Chart">
-
-        </div>
+        <PieChart/>
+        <div id = "d3Chart" width="400" height="400"></div>
     </main>
-  );
+    );
 }
 
 export default HomePage;
